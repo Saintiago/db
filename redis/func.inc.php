@@ -1,43 +1,38 @@
 <?php
 	
-	require "predis/autoload.php";
+	require 'predis/autoload.php';
 	Predis\Autoloader::register();
 
-	define("KEY", "poll");
+	define('KEY', 'poll');
 
 	function AddParticipant($name)
 	{
-		$participantExists = RedisConnection::getInstance()->hexists(KEY, $name);
-		if (!$participantExists)
-		{
-			RedisConnection::getInstance()->hset(KEY, $name, 0);
-		}
+		RedisConnection::getInstance()->zincrby(KEY, 0, $name);
 	}
 
 	function RemoveParticipant($name)
 	{
-		RedisConnection::getInstance()->hdel(KEY, $name);
+		RedisConnection::getInstance()->zrem(KEY, $name);
 	}
 
 	function GetParticipants()
 	{
-		$participants = RedisConnection::getInstance()->hgetall(KEY);
-		arsort($participants);
-		return $participants;
+		return RedisConnection::getInstance()->zrevrange(KEY, 0, -1, 'WITHSCORES');
 	}
 
 	function VoteUp($name)
 	{
-		RedisConnection::getInstance()->hincrby(KEY, $name, 1);
+		RedisConnection::getInstance()->zincrby(KEY, 1, $name);
 	}
 
 	function VoteDown($name)
 	{
-		$votes = RedisConnection::getInstance()->hget(KEY, $name);
+		$votes = RedisConnection::getInstance()->zscore(KEY, $name);
 		if ($votes > 0)
 		{
-			RedisConnection::getInstance()->hincrby(KEY, $name, -1);
+			RedisConnection::getInstance()->zincrby(KEY, -1, $name);
 		}
+		
 	}
 
 	class RedisConnection
