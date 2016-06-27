@@ -1,0 +1,11 @@
+body .add_ispring_content
+{
+    background: url("images/button.png") no-repeat 0 0 transparent;
+    width: 109px;
+    height: 93px;
+}
+
+body .clicked
+{
+    border: 1px solid red !important;
+}

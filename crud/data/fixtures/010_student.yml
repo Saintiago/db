@@ -1,0 +1,9 @@
+Student:
+  student1: { name: Alexey Rysaev }
+  student2: { name: Alexey Koptelin }
+  student3: { name: Vladimir Danilevsky }
+  student4: { name: Vitaly Lukyanenko }
+  student5: { name: Vladimir Lenin }
+  student6: { name: Joseph Stalin }
+  student7: { name: Nikita Khruschev }
+  student8: { name: Leonid Brezhnev }
