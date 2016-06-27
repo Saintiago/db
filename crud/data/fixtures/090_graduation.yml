@@ -1,0 +1,17 @@
+Graduation:
+  graduation1: { student_id: student1, study_id: study1, grade: 50 }
+  graduation2: { student_id: student2, study_id: study1, grade: 52 }
+  graduation3: { student_id: student3, study_id: study1, grade: 40 }
+  graduation4: { student_id: student4, study_id: study1, grade: 10 }
+  graduation5: { student_id: student1, study_id: study2, grade: 80 }
+  graduation6: { student_id: student2, study_id: study2, grade: 70 }
+  graduation7: { student_id: student3, study_id: study2, grade: 64 }
+  graduation8: { student_id: student4, study_id: study2, grade: 20 }
+  graduation9: { student_id: student1, study_id: study3, grade: 72 }
+  graduation10: { student_id: student2, study_id: study3, grade: 48 }
+  graduation11: { student_id: student3, study_id: study3, grade: 94 }
+  graduation12: { student_id: student4, study_id: study3, grade: 60 }
+  graduation13: { student_id: student1, study_id: study4, grade: 0 }
+  graduation14: { student_id: student2, study_id: study4, grade: 30 }
+  graduation15: { student_id: student3, study_id: study4, grade: 90 }
+  graduation16: { student_id: student4, study_id: study4, grade: 100 }

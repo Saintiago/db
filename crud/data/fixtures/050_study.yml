@@ -1,0 +1,5 @@
+Study:
+  study1: { name: Databases }
+  study2: { name: Math }
+  study3: { name: C++ }
+  study4: { name: WebDev }

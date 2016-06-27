@@ -1,0 +1,5 @@
+LibraryUser:
+  library_user1: { student_id: student1 , library_record_id: library_record1 }
+  library_user2: { student_id: student2 , library_record_id: library_record2 }
+  library_user3: { student_id: student3 , library_record_id: library_record3 }
+  library_user4: { student_id: student4 , library_record_id: library_record4 }

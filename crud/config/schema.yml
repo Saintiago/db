@@ -1,75 +1,48 @@
-# config/schema.yml
 propel:
+  user:
+    id:       { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    login:    { type: varchar(255), required: true }
+    password: { type: varchar(255), required: true }
+
   student:
-    id:           ~
-    name:         { type: varchar(255), required: true, index: unique }
+    id:   { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name: { type: varchar(255), required: true }
 
   book:
-    id:           ~
-    name:         { type: varchar(255), required: true, index: unique }
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name:         { type: varchar(255), required: true }
 
   teacher:
-    id:           ~
-    name:         { type: varchar(255), required: true, index: unique }
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name:         { type: varchar(255), required: true }
 
   study:
-    id:           ~
-    name:         { type: varchar(255), required: true, index: unique }
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name:         { type: varchar(255), required: true }
 
   library_record:
-    id:           ~
-    name:         { type: varchar(255), required: true, index: unique }
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name:         { type: varchar(255), required: true }
     book_id:      { type: integer, foreignTable: book, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
     quantity:     { type: integer, required: true}
 
   lecture_schedule:
-    id:           ~  
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
     teacher_id:   { type: integer, foreignTable: teacher, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
     study_id:     { type: integer, foreignTable: study, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
 
   library_user:
-    id:                ~
-    student_ id:       { type: integer, foreignTable: student, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
+    id:                { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    student_id:        { type: integer, foreignTable: student, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
     library_record_id: { type: integer, foreignTable: library_record, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
 
   lecture_attendancy:
-    id:           ~
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
     lecture_id:   { type: integer, foreignTable: lecture_schedule, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
     student_id:   { type: integer, foreignTable: student, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }  
 
   graduation:
-    id:           ~
-    grade:        { type: integer, required: true}    
+    id:           { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    grade:        { type: integer, required: true }    
     student_id:   { type: integer, foreignTable: student, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
     study_id:     { type: integer, foreignTable: study, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }    
- 
-  # jobeet_job:
-  #   id:           ~
-  #   category_id:  { type: integer, foreignTable: jobeet_category, foreignReference: id, required: true }
-  #   type:         { type: varchar(255) }
-  #   company:      { type: varchar(255), required: true }
-  #   logo:         { type: varchar(255) }
-  #   url:          { type: varchar(255) }
-  #   position:     { type: varchar(255), required: true }
-  #   location:     { type: varchar(255), required: true }
-  #   description:  { type: longvarchar, required: true }
-  #   how_to_apply: { type: longvarchar, required: true }
-  #   token:        { type: varchar(255), required: true, index: unique }
-  #   is_public:    { type: boolean, required: true, default: 1 }
-  #   is_activated: { type: boolean, required: true, default: 0 }
-  #   email:        { type: varchar(255), required: true }
-  #   expires_at:   { type: timestamp, required: true }
-  #   created_at:   ~
-  #   updated_at:   ~
- 
-  # jobeet_affiliate:
-  #   id:           ~
-  #   url:          { type: varchar(255), required: true }
-  #   email:        { type: varchar(255), required: true, index: unique }
-  #   token:        { type: varchar(255), required: true }
-  #   is_active:    { type: boolean, required: true, default: 0 }
-  #   created_at:   ~
- 
-  # jobeet_category_affiliate:
-  #   category_id:  { type: integer, foreignTable: jobeet_category, foreignReference: id, required: true, primaryKey: true, onDelete: cascade }
-  #   affiliate_id: { type: integer, foreignTable: jobeet_affiliate, foreignReference: id, required: true, primaryKey: true, onDelete: cascade }

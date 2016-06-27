@@ -10,5 +10,10 @@
   </head>
   <body>
     <?php echo $sf_content ?>
+    <ul>
+      <li><a href="<?php echo url_for('default/modules') ?>" title="Logoff">Modules</a></li>
+      <li><a href="<?php echo url_for('default/new') ?>" title="Logoff">Registration</a></li>
+      <li><a href="<?php echo url_for('@logoff') ?>" title="Logoff">Logoff</a></li>
+    </ul>
   </body>
 </html>

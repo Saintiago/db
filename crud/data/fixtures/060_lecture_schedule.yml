@@ -1,0 +1,5 @@
+LectureSchedule:
+  lecture1: { teacher_id: teacher1 , study_id: study1 }
+  lecture2: { teacher_id: teacher2 , study_id: study2 }
+  lecture3: { teacher_id: teacher3 , study_id: study3 }
+  lecture4: { teacher_id: teacher4 , study_id: study4 }

@@ -1,0 +1,5 @@
+Book:
+  book1: { name: databases book }
+  book2: { name: math book }
+  book3: { name: c++ book }
+  book4: { name: WebDev book }

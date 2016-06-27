@@ -1,0 +1,5 @@
+LibraryRecord:
+  library_record1: { book_id: book1, quantity: 1 }
+  library_record2: { book_id: book2, quantity: 1 }
+  library_record3: { book_id: book3, quantity: 1 }
+  library_record4: { book_id: book4, quantity: 2 }

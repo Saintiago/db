@@ -5,6 +5,10 @@
 homepage:
   url:   /
   param: { module: default, action: index }
+  
+logoff:
+  url: /logoff
+  param: { module: default, action: logoff }
 
 # generic rules
 # please, remove them by adding more specific rules

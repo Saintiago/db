@@ -1,0 +1,17 @@
+LectureAttendancy:
+  lecture_attendancy1: { lecture_id: lecture1, student_id: student1 }
+  lecture_attendancy2: { lecture_id: lecture1, student_id: student2 }
+  lecture_attendancy3: { lecture_id: lecture1, student_id: student3 }
+  lecture_attendancy4: { lecture_id: lecture1, student_id: student4 }
+  lecture_attendancy5: { lecture_id: lecture2, student_id: student1 }
+  lecture_attendancy6: { lecture_id: lecture2, student_id: student2 }
+  lecture_attendancy7: { lecture_id: lecture2, student_id: student3 }
+  lecture_attendancy8: { lecture_id: lecture2, student_id: student4 }
+  lecture_attendancy9: { lecture_id: lecture3, student_id: student1 }
+  lecture_attendancy10: { lecture_id: lecture3, student_id: student2 }
+  lecture_attendancy11: { lecture_id: lecture3, student_id: student3 }
+  lecture_attendancy12: { lecture_id: lecture3, student_id: student4 }
+  lecture_attendancy13: { lecture_id: lecture4, student_id: student1 }
+  lecture_attendancy14: { lecture_id: lecture4, student_id: student2 }
+  lecture_attendancy15: { lecture_id: lecture4, student_id: student3 }
+  lecture_attendancy16: { lecture_id: lecture4, student_id: student4 }
