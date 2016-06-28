@@ -10,6 +10,83 @@
 class defaultActions extends sfActions
 {
   
+  public function executeExtraOne(sfWebRequest $request)
+  {
+    /*
+    SELECT student_name
+    FROM student
+    INNER JOIN library_user USING (student_id)
+    INNER JOIN library USING (library_record_id)
+    INNER JOIN book USING (book_id)
+    WHERE book_name = 'Databases book';
+    */
+    
+    $bookName = $request->getGetParameter('book_name', 'Databases book');
+    $criteria = new Criteria();
+    $criteria->addJoin(StudentPeer::ID, LibraryUserPeer::STUDENT_ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LibraryUserPeer::LIBRARY_RECORD_ID, LibraryRecordPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LibraryRecordPeer::BOOK_ID, BookPeer::ID, Criteria::INNER_JOIN);
+    $criteria->add(BookPeer::NAME, $bookName, Criteria::EQUAL);
+    $this->students = StudentPeer::doSelect($criteria);
+  }
+  
+  public function executeExtraTwo(sfWebRequest $request)
+  {
+    /*
+    SELECT student_name, GROUP_CONCAT(teacher_name)
+    FROM student
+    INNER JOIN lecture_attendancy USING (student_id)
+    INNER JOIN lecture_schedule USING (lecture_id)
+    INNER JOIN teacher USING (teacher_id)
+    GROUP BY student_id;
+    */
+    
+    $criteria = new Criteria();
+    $criteria->clearSelectColumns();
+    $criteria->addSelectColumn(StudentPeer::NAME);
+    $criteria->addJoin(StudentPeer::ID, LectureAttendancyPeer::STUDENT_ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LectureAttendancyPeer::LECTURE_ID, LectureSchedulePeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LectureSchedulePeer::TEACHER_ID, TeacherPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addAsColumn('teachers', $this->getGroupConcatSql(TeacherPeer::NAME));
+    $criteria->addGroupByColumn(StudentPeer::NAME);
+    $this->students = StudentPeer::doSelectStmt($criteria)->fetchAll();
+  }
+  
+  public function executeExtraThree(sfWebRequest $request)
+  {
+    /*
+    SELECT teacher_name, count(distinct student_id) as cnt
+    FROM teacher
+    INNER JOIN lecture_schedule USING (teacher_id)
+    INNER JOIN lecture_attendancy USING (lecture_id)
+    INNER JOIN student USING (student_id)
+    GROUP BY teacher_name
+    ORDER BY cnt desc;
+    */
+    
+    $criteria = new Criteria();
+    $criteria->clearSelectColumns();
+    $criteria->addSelectColumn(TeacherPeer::NAME);
+    $criteria->addJoin(TeacherPeer::ID, LectureSchedulePeer::TEACHER_ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LectureSchedulePeer::ID, LectureAttendancyPeer::LECTURE_ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(LectureAttendancyPeer::STUDENT_ID, StudentPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addAsColumn('students_count', $this->getSumSql(StudentPeer::ID));
+    $criteria->addDescendingOrderByColumn('students_count');
+    $criteria->addGroupByColumn(TeacherPeer::NAME);
+    
+    $this->teachers = TeacherPeer::doSelectStmt($criteria)->fetchAll();
+  }
+  
+  private function getGroupConcatSql($columnName)
+  {
+    return 'GROUP_CONCAT(DISTINCT ' . $columnName . ' SEPARATOR ", ")';
+  }
+  
+  private function getSumSql($columnName)
+  {
+    return 'SUM(DISTINCT ' . $columnName . ')';
+  }
+  
   public function executeLogoff(sfWebRequest $request)
   {
     sfContext::getInstance()->getUser()->setAuthenticated(false);

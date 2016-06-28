@@ -1,6 +1,18 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+extra_one:
+  url: /extra_one
+  param: { module: default, action: extraOne }
+  
+extra_two:
+  url: /extra_two
+  param: { module: default, action: extraTwo }
+  
+extra_three:
+  url: /extra_three
+  param: { module: default, action: extraThree }
+
 # default rules
 homepage:
   url:   /

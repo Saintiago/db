@@ -2226,3 +2226,505 @@ Jun 27 23:15:45 symfony [info] {sfWebDebugLogger} Factories 8.24 ms (1)
 Jun 27 23:15:45 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.13 ms (1)
 Jun 27 23:15:45 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 6.52 ms (1)
 Jun 27 23:15:45 symfony [info] {sfWebResponse} Send content (29658 o)
+Jun 28 13:16:35 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:16:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:16:36 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:16:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:16:36 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:16:36 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.8 MB | mempeak:    2.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:16:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.8 MB | mempeak:    2.8 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.ID
+Jun 28 13:16:36 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/model/om/BaseStudent.php on line 178 (Undefined offset: 1)
+Jun 28 13:17:07 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:17:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:17:07 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:17:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:17:07 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:17:07 symfony [debug] {sfPropelLogger} time:  0.060 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:17:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.ID
+Jun 28 13:17:07 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:17:07 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:17:07 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:17:07 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:17:07 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:17:07 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:17:07 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:17:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:17:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:17:07 symfony [info] {sfWebDebugLogger} Configuration 16.90 ms (10)
+Jun 28 13:17:07 symfony [info] {sfWebDebugLogger} Factories 23.27 ms (1)
+Jun 28 13:17:07 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 86.57 ms (1)
+Jun 28 13:17:07 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 28.85 ms (1)
+Jun 28 13:17:07 symfony [info] {sfWebResponse} Send content (59251 o)
+Jun 28 13:18:09 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:18:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:18:09 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:18:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:18:09 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:18:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:18:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.ID
+Jun 28 13:18:09 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:18:09 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:09 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:09 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:09 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:09 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:18:09 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:18:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:18:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:18:09 symfony [info] {sfWebDebugLogger} Configuration 5.69 ms (9)
+Jun 28 13:18:09 symfony [info] {sfWebDebugLogger} Factories 18.03 ms (1)
+Jun 28 13:18:09 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 8.97 ms (1)
+Jun 28 13:18:09 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 14.56 ms (1)
+Jun 28 13:18:09 symfony [info] {sfWebResponse} Send content (59279 o)
+Jun 28 13:18:39 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:18:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:18:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:18:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:18:39 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:18:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:18:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.ID
+Jun 28 13:18:39 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:18:47 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:18:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:18:47 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:18:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:18:47 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:18:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:18:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.ID
+Jun 28 13:18:47 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:18:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: student_name)
+Jun 28 13:18:47 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:18:47 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:18:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:18:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:18:47 symfony [info] {sfWebDebugLogger} Configuration 5.61 ms (9)
+Jun 28 13:18:47 symfony [info] {sfWebDebugLogger} Factories 11.52 ms (1)
+Jun 28 13:18:47 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 7.05 ms (1)
+Jun 28 13:18:47 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 9.94 ms (1)
+Jun 28 13:18:47 symfony [info] {sfWebResponse} Send content (60813 o)
+Jun 28 13:19:47 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:19:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:19:47 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:19:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:19:47 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:19:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:19:47 symfony [debug] {sfPropelLogger} time:  0.006 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:19:47 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:19:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:19:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:19:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:19:47 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:19:47 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:19:47 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:19:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:19:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:19:47 symfony [info] {sfWebDebugLogger} Configuration 4.70 ms (9)
+Jun 28 13:19:47 symfony [info] {sfWebDebugLogger} Factories 13.89 ms (1)
+Jun 28 13:19:47 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 17.74 ms (1)
+Jun 28 13:19:47 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 11.49 ms (1)
+Jun 28 13:19:47 symfony [info] {sfWebResponse} Send content (60788 o)
+Jun 28 13:20:24 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:20:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:20:24 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:20:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:20:24 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:20:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:20:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:20:24 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:20:24 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: NAME)
+Jun 28 13:20:24 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: NAME)
+Jun 28 13:20:24 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: NAME)
+Jun 28 13:20:24 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: NAME)
+Jun 28 13:20:24 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:20:24 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:20:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:20:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:20:24 symfony [info] {sfWebDebugLogger} Configuration 6.37 ms (9)
+Jun 28 13:20:24 symfony [info] {sfWebDebugLogger} Factories 22.15 ms (1)
+Jun 28 13:20:24 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 15.90 ms (1)
+Jun 28 13:20:24 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 13.89 ms (1)
+Jun 28 13:20:24 symfony [info] {sfWebResponse} Send content (60789 o)
+Jun 28 13:21:29 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:21:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:21:29 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:21:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:21:29 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:21:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:21:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.NAME, GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:21:29 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:21:29 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:21:29 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:21:29 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:21:29 symfony [notice] {sfWebDebugLogger}  Notice at /home/ubuntu/workspace/crud/lib/vendor/symfony/lib/escaper/sfOutputEscaperArrayDecorator.class.php on line 119 (Undefined index: name)
+Jun 28 13:21:29 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:21:29 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:21:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:21:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:21:29 symfony [info] {sfWebDebugLogger} Configuration 5.59 ms (9)
+Jun 28 13:21:29 symfony [info] {sfWebDebugLogger} Factories 13.59 ms (1)
+Jun 28 13:21:29 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 13.04 ms (1)
+Jun 28 13:21:29 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 11.21 ms (1)
+Jun 28 13:21:29 symfony [info] {sfWebResponse} Send content (61116 o)
+Jun 28 13:21:44 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:21:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:21:44 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:21:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:21:44 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:21:44 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:21:44 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.NAME, GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:21:44 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:21:44 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:21:44 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:21:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:21:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:21:44 symfony [info] {sfWebDebugLogger} Configuration 5.58 ms (9)
+Jun 28 13:21:44 symfony [info] {sfWebDebugLogger} Factories 15.62 ms (1)
+Jun 28 13:21:44 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 16.86 ms (1)
+Jun 28 13:21:44 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 10.39 ms (1)
+Jun 28 13:21:44 symfony [info] {sfWebResponse} Send content (35060 o)
+Jun 28 13:22:01 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:22:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:22:01 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:22:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:22:01 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:22:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:22:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.NAME, GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:22:01 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:22:01 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:22:01 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:22:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:22:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:22:01 symfony [info] {sfWebDebugLogger} Configuration 4.18 ms (9)
+Jun 28 13:22:01 symfony [info] {sfWebDebugLogger} Factories 14.48 ms (1)
+Jun 28 13:22:01 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 7.01 ms (1)
+Jun 28 13:22:01 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 11.57 ms (1)
+Jun 28 13:22:01 symfony [info] {sfWebResponse} Send content (33221 o)
+Jun 28 13:29:24 symfony [info] {sfPatternRouting} Match route "extra_three" (/extra_three) for /extra_three with parameters array (  'module' => 'default',  'action' => 'extraThree',)
+Jun 28 13:29:24 symfony [info] {sfFrontWebController} Action "default/extraThree" does not exist
+Jun 28 13:29:24 symfony [err] {sfError404Exception} Action "default/extraThree" does not exist.
+Jun 28 13:29:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 28 13:29:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:29:24 symfony [info] {sfWebDebugLogger} Configuration 2.94 ms (5)
+Jun 28 13:29:24 symfony [info] {sfWebDebugLogger} Factories 17.54 ms (1)
+Jun 28 13:29:44 symfony [info] {sfPatternRouting} Match route "extra_three" (/extra_three) for /extra_three with parameters array (  'module' => 'default',  'action' => 'extraThree',)
+Jun 28 13:29:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:29:44 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:29:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:29:44 symfony [info] {defaultActions} Call "defaultActions->executeExtraThree()"
+Jun 28 13:29:44 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:29:44 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT teacher.NAME, SUM(DISTINCT student.ID) AS students_count FROM `teacher` INNER JOIN lecture_schedule ON (teacher.ID=lecture_schedule.TEACHER_ID) INNER JOIN lecture_attendancy ON (lecture_schedule.ID=lecture_attendancy.LECTURE_ID) INNER JOIN student ON (lecture_attendancy.STUDENT_ID=student.ID) GROUP BY teacher.NAME ORDER BY students_count DESC
+Jun 28 13:29:44 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraThreeSuccess.php"
+Jun 28 13:29:44 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:29:44 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:29:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:29:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:29:44 symfony [info] {sfWebDebugLogger} Configuration 4.97 ms (9)
+Jun 28 13:29:44 symfony [info] {sfWebDebugLogger} Factories 12.41 ms (1)
+Jun 28 13:29:44 symfony [info] {sfWebDebugLogger} Action "default/extraThree" 13.09 ms (1)
+Jun 28 13:29:44 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraThree" 10.16 ms (1)
+Jun 28 13:29:44 symfony [info] {sfWebResponse} Send content (33142 o)
+Jun 28 13:30:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:30:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:30:11 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:30:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:30:11 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:30:11 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:30:11 symfony [err] {sfConfigurationException} The route "extraOne" does not exist.
+Jun 28 13:30:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 28 13:30:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:30:11 symfony [info] {sfWebDebugLogger} Configuration 8.97 ms (9)
+Jun 28 13:30:11 symfony [info] {sfWebDebugLogger} Factories 15.50 ms (1)
+Jun 28 13:30:11 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.23 ms (1)
+Jun 28 13:30:11 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 59.70 ms (1)
+Jun 28 13:30:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:30:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:30:36 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:30:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:30:36 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:30:36 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:30:36 symfony [err] {sfConfigurationException} The route "extraOne" does not exist.
+Jun 28 13:30:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 28 13:30:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:30:36 symfony [info] {sfWebDebugLogger} Configuration 6.82 ms (9)
+Jun 28 13:30:36 symfony [info] {sfWebDebugLogger} Factories 14.74 ms (1)
+Jun 28 13:30:36 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.15 ms (1)
+Jun 28 13:30:36 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 44.76 ms (1)
+Jun 28 13:30:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:30:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:30:52 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:30:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:30:52 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:30:52 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:30:53 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:30:53 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:30:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:30:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:30:53 symfony [info] {sfWebDebugLogger} Configuration 6.21 ms (9)
+Jun 28 13:30:53 symfony [info] {sfWebDebugLogger} Factories 13.88 ms (1)
+Jun 28 13:30:53 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.15 ms (1)
+Jun 28 13:30:53 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 11.76 ms (1)
+Jun 28 13:30:53 symfony [info] {sfWebResponse} Send content (30282 o)
+Jun 28 13:30:55 symfony [info] {sfPatternRouting} Match route "extra_one" (/extra_one) for /extra_one with parameters array (  'module' => 'default',  'action' => 'extraOne',)
+Jun 28 13:30:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:30:55 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:30:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:30:55 symfony [info] {defaultActions} Call "defaultActions->executeExtraOne()"
+Jun 28 13:30:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:30:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.ID, student.NAME FROM `student` INNER JOIN library_user ON (student.ID=library_user.STUDENT_ID) INNER JOIN library_record ON (library_user.LIBRARY_RECORD_ID=library_record.ID) INNER JOIN book ON (library_record.BOOK_ID=book.ID) WHERE book.NAME='Databases book'
+Jun 28 13:30:55 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraOneSuccess.php"
+Jun 28 13:30:55 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:30:55 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:30:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:30:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:30:55 symfony [info] {sfWebDebugLogger} Configuration 11.58 ms (9)
+Jun 28 13:30:55 symfony [info] {sfWebDebugLogger} Factories 14.86 ms (1)
+Jun 28 13:30:55 symfony [info] {sfWebDebugLogger} Action "default/extraOne" 14.20 ms (1)
+Jun 28 13:30:55 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraOne" 9.93 ms (1)
+Jun 28 13:30:55 symfony [info] {sfWebResponse} Send content (32563 o)
+Jun 28 13:31:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:31:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:08 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:08 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:31:08 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:31:08 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:08 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:08 symfony [info] {sfWebDebugLogger} Configuration 5.46 ms (9)
+Jun 28 13:31:08 symfony [info] {sfWebDebugLogger} Factories 15.12 ms (1)
+Jun 28 13:31:08 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.15 ms (1)
+Jun 28 13:31:08 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 14.26 ms (1)
+Jun 28 13:31:08 symfony [info] {sfWebResponse} Send content (30247 o)
+Jun 28 13:31:14 symfony [info] {sfPatternRouting} Match route "extra_one" (/extra_one) for /extra_one with parameters array (  'module' => 'default',  'action' => 'extraOne',)
+Jun 28 13:31:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:14 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:14 symfony [info] {defaultActions} Call "defaultActions->executeExtraOne()"
+Jun 28 13:31:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:31:14 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.ID, student.NAME FROM `student` INNER JOIN library_user ON (student.ID=library_user.STUDENT_ID) INNER JOIN library_record ON (library_user.LIBRARY_RECORD_ID=library_record.ID) INNER JOIN book ON (library_record.BOOK_ID=book.ID) WHERE book.NAME='Databases book'
+Jun 28 13:31:14 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraOneSuccess.php"
+Jun 28 13:31:14 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:14 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:14 symfony [info] {sfWebDebugLogger} Configuration 5.33 ms (9)
+Jun 28 13:31:14 symfony [info] {sfWebDebugLogger} Factories 12.97 ms (1)
+Jun 28 13:31:14 symfony [info] {sfWebDebugLogger} Action "default/extraOne" 12.93 ms (1)
+Jun 28 13:31:14 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraOne" 15.11 ms (1)
+Jun 28 13:31:14 symfony [info] {sfWebResponse} Send content (32562 o)
+Jun 28 13:31:42 symfony [info] {sfPatternRouting} Match route "extra_one" (/extra_one) for /extra_one with parameters array (  'module' => 'default',  'action' => 'extraOne',)
+Jun 28 13:31:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:42 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:42 symfony [info] {defaultActions} Call "defaultActions->executeExtraOne()"
+Jun 28 13:31:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:31:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.ID, student.NAME FROM `student` INNER JOIN library_user ON (student.ID=library_user.STUDENT_ID) INNER JOIN library_record ON (library_user.LIBRARY_RECORD_ID=library_record.ID) INNER JOIN book ON (library_record.BOOK_ID=book.ID) WHERE book.NAME='WebDev book'
+Jun 28 13:31:42 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraOneSuccess.php"
+Jun 28 13:31:42 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:42 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:42 symfony [info] {sfWebDebugLogger} Configuration 5.21 ms (9)
+Jun 28 13:31:42 symfony [info] {sfWebDebugLogger} Factories 15.57 ms (1)
+Jun 28 13:31:42 symfony [info] {sfWebDebugLogger} Action "default/extraOne" 16.94 ms (1)
+Jun 28 13:31:42 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraOne" 9.61 ms (1)
+Jun 28 13:31:42 symfony [info] {sfWebResponse} Send content (32586 o)
+Jun 28 13:31:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:31:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:50 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:50 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:31:50 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:31:50 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:50 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:50 symfony [info] {sfWebDebugLogger} Configuration 5.96 ms (9)
+Jun 28 13:31:50 symfony [info] {sfWebDebugLogger} Factories 14.39 ms (1)
+Jun 28 13:31:50 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.21 ms (1)
+Jun 28 13:31:50 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 14.63 ms (1)
+Jun 28 13:31:50 symfony [info] {sfWebResponse} Send content (30272 o)
+Jun 28 13:31:52 symfony [info] {sfPatternRouting} Match route "extra_three" (/extra_three) for /extra_three with parameters array (  'module' => 'default',  'action' => 'extraThree',)
+Jun 28 13:31:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:52 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:52 symfony [info] {defaultActions} Call "defaultActions->executeExtraThree()"
+Jun 28 13:31:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:31:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT teacher.NAME, SUM(DISTINCT student.ID) AS students_count FROM `teacher` INNER JOIN lecture_schedule ON (teacher.ID=lecture_schedule.TEACHER_ID) INNER JOIN lecture_attendancy ON (lecture_schedule.ID=lecture_attendancy.LECTURE_ID) INNER JOIN student ON (lecture_attendancy.STUDENT_ID=student.ID) GROUP BY teacher.NAME ORDER BY students_count DESC
+Jun 28 13:31:52 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraThreeSuccess.php"
+Jun 28 13:31:52 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:52 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:52 symfony [info] {sfWebDebugLogger} Configuration 4.59 ms (9)
+Jun 28 13:31:52 symfony [info] {sfWebDebugLogger} Factories 5.65 ms (1)
+Jun 28 13:31:52 symfony [info] {sfWebDebugLogger} Action "default/extraThree" 8.06 ms (1)
+Jun 28 13:31:52 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraThree" 4.77 ms (1)
+Jun 28 13:31:52 symfony [info] {sfWebResponse} Send content (33198 o)
+Jun 28 13:31:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'modules',)
+Jun 28 13:31:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:53 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:53 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:31:53 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:31:53 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:53 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:53 symfony [info] {sfWebDebugLogger} Configuration 5.04 ms (9)
+Jun 28 13:31:53 symfony [info] {sfWebDebugLogger} Factories 10.65 ms (1)
+Jun 28 13:31:53 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.15 ms (1)
+Jun 28 13:31:53 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 7.19 ms (1)
+Jun 28 13:31:53 symfony [info] {sfWebResponse} Send content (30250 o)
+Jun 28 13:31:54 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:31:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:31:54 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:31:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:31:54 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:31:54 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:31:54 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.NAME, GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:31:54 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:31:54 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:54 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:31:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:31:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:31:54 symfony [info] {sfWebDebugLogger} Configuration 7.56 ms (9)
+Jun 28 13:31:54 symfony [info] {sfWebDebugLogger} Factories 7.31 ms (1)
+Jun 28 13:31:54 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 9.60 ms (1)
+Jun 28 13:31:54 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 6.87 ms (1)
+Jun 28 13:31:54 symfony [info] {sfWebResponse} Send content (33288 o)
+Jun 28 13:32:43 symfony [info] {sfPatternRouting} Match route "extra_two" (/extra_two) for /extra_two with parameters array (  'module' => 'default',  'action' => 'extraTwo',)
+Jun 28 13:32:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:43 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:32:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:43 symfony [info] {defaultActions} Call "defaultActions->executeExtraTwo()"
+Jun 28 13:32:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:32:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.3 MB | memdelta:      0.0 B | SELECT student.NAME, GROUP_CONCAT(DISTINCT teacher.NAME SEPARATOR ", ") AS teachers FROM `student` INNER JOIN lecture_attendancy ON (student.ID=lecture_attendancy.STUDENT_ID) INNER JOIN lecture_schedule ON (lecture_attendancy.LECTURE_ID=lecture_schedule.ID) INNER JOIN teacher ON (lecture_schedule.TEACHER_ID=teacher.ID) GROUP BY student.NAME
+Jun 28 13:32:43 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraTwoSuccess.php"
+Jun 28 13:32:43 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:43 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:32:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:32:43 symfony [info] {sfWebDebugLogger} Configuration 29.88 ms (10)
+Jun 28 13:32:43 symfony [info] {sfWebDebugLogger} Factories 18.32 ms (1)
+Jun 28 13:32:43 symfony [info] {sfWebDebugLogger} Action "default/extraTwo" 33.20 ms (1)
+Jun 28 13:32:43 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraTwo" 22.45 ms (1)
+Jun 28 13:32:43 symfony [info] {sfWebResponse} Send content (33325 o)
+Jun 28 13:32:50 symfony [info] {sfPatternRouting} Match route "logoff" (/logoff) for /logoff with parameters array (  'module' => 'default',  'action' => 'logoff',)
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:50 symfony [info] {defaultActions} Call "defaultActions->executeLogoff()"
+Jun 28 13:32:50 symfony [info] {myUser} User is not authenticated
+Jun 28 13:32:50 symfony [info] {defaultActions} Forward to action "default/login"
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:32:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:50 symfony [info] {defaultActions} Call "defaultActions->executeLogin()"
+Jun 28 13:32:50 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/loginSuccess.php"
+Jun 28 13:32:50 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:50 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:32:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:32:50 symfony [info] {sfWebDebugLogger} Configuration 221.19 ms (12)
+Jun 28 13:32:50 symfony [info] {sfWebDebugLogger} Factories 102.53 ms (1)
+Jun 28 13:32:50 symfony [info] {sfWebDebugLogger} Action "default/logoff" 81.16 ms (1)
+Jun 28 13:32:50 symfony [info] {sfWebDebugLogger} Action "default/login" 43.32 ms (1)
+Jun 28 13:32:50 symfony [info] {sfWebDebugLogger} View "Success" for "default/login" 14.80 ms (1)
+Jun 28 13:32:50 symfony [info] {sfWebResponse} Send content (33436 o)
+Jun 28 13:32:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /default/new with parameters array (  'module' => 'default',  'action' => 'new',)
+Jun 28 13:32:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:51 symfony [info] {defaultActions} Call "defaultActions->executeNew()"
+Jun 28 13:32:51 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/newSuccess.php"
+Jun 28 13:32:51 symfony [info] {sfPartialView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/_form.php"
+Jun 28 13:32:51 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:51 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:32:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:32:51 symfony [info] {sfWebDebugLogger} Configuration 7.50 ms (9)
+Jun 28 13:32:51 symfony [info] {sfWebDebugLogger} Factories 10.30 ms (1)
+Jun 28 13:32:51 symfony [info] {sfWebDebugLogger} Action "default/new" 6.51 ms (1)
+Jun 28 13:32:51 symfony [info] {sfWebDebugLogger} View "Success" for "default/new" 13.66 ms (1)
+Jun 28 13:32:51 symfony [info] {sfWebDebugLogger} Partial "default/_form" 4.50 ms (1)
+Jun 28 13:32:51 symfony [info] {sfWebResponse} Send content (33107 o)
+Jun 28 13:32:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /default/create with parameters array (  'module' => 'default',  'action' => 'create',)
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:59 symfony [info] {defaultActions} Call "defaultActions->executeCreate()"
+Jun 28 13:32:59 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.3 MB | mempeak:    2.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:32:59 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:    2.3 MB | mempeak:    2.3 MB | memdelta:      0.0 B | INSERT INTO user (`ID`,`LOGIN`,`PASSWORD`) VALUES (NULL,'new','1234')
+Jun 28 13:32:59 symfony [info] {sfFrontWebController} Redirect to "https://crud-saintiago.c9users.io/crud/web/frontend_dev.php/default/edit/id/4"
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send header "Location: https://crud-saintiago.c9users.io/crud/web/frontend_dev.php/default/edit/id/4"
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Configuration 4.24 ms (8)
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Factories 14.65 ms (1)
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Action "default/create" 26.16 ms (1)
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send content (148 o)
+Jun 28 13:32:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /default/edit/id/4 with parameters array (  'module' => 'default',  'action' => 'edit',  'id' => '4',)
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:32:59 symfony [info] {sfBasicSecurityFilter} Action "default/edit" requires authentication, forwarding to "default/login"
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:32:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:32:59 symfony [info] {defaultActions} Call "defaultActions->executeLogin()"
+Jun 28 13:32:59 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/loginSuccess.php"
+Jun 28 13:32:59 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:59 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Configuration 7.11 ms (12)
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Factories 4.76 ms (1)
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} Action "default/login" 2.70 ms (1)
+Jun 28 13:32:59 symfony [info] {sfWebDebugLogger} View "Success" for "default/login" 9.86 ms (1)
+Jun 28 13:32:59 symfony [info] {sfWebResponse} Send content (32397 o)
+Jun 28 13:33:04 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /default/edit/id/4 with parameters array (  'module' => 'default',  'action' => 'edit',  'id' => '4',)
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:33:04 symfony [info] {sfBasicSecurityFilter} Action "default/edit" requires authentication, forwarding to "default/login"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:33:04 symfony [info] {defaultActions} Call "defaultActions->executeLogin()"
+Jun 28 13:33:04 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.3 MB | mempeak:    2.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:33:04 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.3 MB | mempeak:    2.5 MB | memdelta:      0.0 B | SELECT user.ID, user.LOGIN, user.PASSWORD FROM `user` WHERE user.LOGIN='new' LIMIT 1
+Jun 28 13:33:04 symfony [info] {myUser} User is authenticated
+Jun 28 13:33:04 symfony [info] {defaultActions} Forward to action "default/modules"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:33:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:33:04 symfony [info] {defaultActions} Call "defaultActions->executeModules()"
+Jun 28 13:33:04 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/modulesSuccess.php"
+Jun 28 13:33:04 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:33:04 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:33:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:33:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:33:04 symfony [info] {sfWebDebugLogger} Configuration 8.77 ms (15)
+Jun 28 13:33:04 symfony [info] {sfWebDebugLogger} Factories 14.76 ms (1)
+Jun 28 13:33:04 symfony [info] {sfWebDebugLogger} Action "default/login" 31.44 ms (1)
+Jun 28 13:33:04 symfony [info] {sfWebDebugLogger} Action "default/modules" 0.15 ms (1)
+Jun 28 13:33:04 symfony [info] {sfWebDebugLogger} View "Success" for "default/modules" 10.92 ms (1)
+Jun 28 13:33:04 symfony [info] {sfWebResponse} Send content (37289 o)
+Jun 28 13:33:06 symfony [info] {sfPatternRouting} Match route "extra_one" (/extra_one) for /extra_one with parameters array (  'module' => 'default',  'action' => 'extraOne',)
+Jun 28 13:33:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 28 13:33:06 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 28 13:33:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 28 13:33:06 symfony [info] {defaultActions} Call "defaultActions->executeExtraOne()"
+Jun 28 13:33:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jun 28 13:33:06 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    2.0 MB | mempeak:    2.0 MB | memdelta:      0.0 B | SELECT student.ID, student.NAME FROM `student` INNER JOIN library_user ON (student.ID=library_user.STUDENT_ID) INNER JOIN library_record ON (library_user.LIBRARY_RECORD_ID=library_record.ID) INNER JOIN book ON (library_record.BOOK_ID=book.ID) WHERE book.NAME='Databases book'
+Jun 28 13:33:06 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/modules/default/templates/extraOneSuccess.php"
+Jun 28 13:33:06 symfony [info] {sfPHPView} Decorate content with "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:33:06 symfony [info] {sfPHPView} Render "/home/ubuntu/workspace/crud/apps/frontend/templates/layout.php"
+Jun 28 13:33:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 28 13:33:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 28 13:33:06 symfony [info] {sfWebDebugLogger} Configuration 6.48 ms (9)
+Jun 28 13:33:06 symfony [info] {sfWebDebugLogger} Factories 6.89 ms (1)
+Jun 28 13:33:06 symfony [info] {sfWebDebugLogger} Action "default/extraOne" 9.08 ms (1)
+Jun 28 13:33:06 symfony [info] {sfWebDebugLogger} View "Success" for "default/extraOne" 6.74 ms (1)
+Jun 28 13:33:06 symfony [info] {sfWebResponse} Send content (32577 o)
